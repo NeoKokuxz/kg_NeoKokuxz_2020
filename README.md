@@ -1,5 +1,7 @@
 # kg_NeoKokuxz_2020
 
+## Neo Chen
+
 ## Usage
 ```java
 javac main.java
