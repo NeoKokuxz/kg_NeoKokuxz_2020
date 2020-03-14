@@ -1,22 +1,9 @@
 import java.util.HashMap;
+import java.util.Scanner;
+
 public class main {
     public static void main(String[] args) {
-        String s1 = "abc";
-        String s2 = "bcd";
-        System.out.println("Test Case 1: abc vs bcd");
-        System.out.println( isOneToOne(s1,s2) );
-        String s3 = "foo";
-        String s4 = "bar";
-        System.out.println("Test Case 2: foo vs bar");
-        System.out.println( isOneToOne(s3,s4) );
-        String s5 = "bar";
-        String s6 = "foo";
-        System.out.println("Test Case 3: bar vs foo");
-        System.out.println( isOneToOne(s5,s6) );
-        String s7 = "barrr";
-        String s8 = "foo";
-        System.out.println("Test Case 4: barrr vs foo");
-        System.out.println( isOneToOne(s7,s8) );
+        System.out.println( isOneToOne(args[0], args[1]) );
     }
 
     public static boolean isOneToOne(String s1, String s2) {
@@ -43,7 +30,7 @@ public class main {
                 }
             }
             //Print Success Mapping
-            System.out.println(HM);
+            //System.out.println(HM);
             return true;
         } else {
             //Length not matching
@@ -54,7 +41,7 @@ public class main {
 
     public static boolean lengthCheck(String s1, String s2){
         if(s1.length() != s2.length()){
-            System.out.println("Length doesn't match");
+            //System.out.println("Length doesn't match");
             return false;
         } else {
             return true;
